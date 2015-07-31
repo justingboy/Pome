@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.adsmogo.adview.AdsMogoLayout android:id="@id/admogo_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" adsmogo:appid="fc0b397e3e6d41e68788e827a8e0b100" adsmogo:express_mode="true" xmlns:adsmogo="http://www.adsmogo.com"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

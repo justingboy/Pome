@@ -1,0 +1,442 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abcc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- sdk 所需的用户权限，必选 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- adSage End -->
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 以下两个为新增必选权限！ -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <!-- used permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:icon="@drawable/title"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".SpliashActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestListActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service android:name="com.kyview.DownloadService" />
+
+        <activity
+            android:name=".DataActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".PictureActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.upush.sdk.PushActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.upush.sdk.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <!--
+                 <action android:name="android.intent.action.PACKAGE_ADDED" />
+                 <data android:scheme="package" />
+                -->
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.upush.sdk.PushService"
+            android:enabled="true" >
+
+            <!-- 配置我们分配给开发者的appId,写在value字段处upush_20131517031040gzh_999 -->
+            <meta-data
+                android:name="application_id"
+                android:value="upush_20131228120830kmd_104" />
+            <!-- 配置市场的渠道号,写在value字段处，可参考我们提供的Upush常用渠道编码表 -->
+            <meta-data
+                android:name="channel_id"
+                android:value="adview_test" />
+            <!-- 在value字段填写插件类的完整包名，如果有多个，可以用分号“;”作为分隔符, 如果没有可以不写 -->
+            <meta-data
+                android:name="plugin"
+                android:value="com.upush.sample.plugin01;com.upush.sample.plugin02" />
+        </service>
+
+        <!-- 艾德聚合 -->
+
+
+        <!-- 广告点击后，打开 Landing Site 时使用的 Activity，必选 -->
+        <activity
+            android:name="com.mobisage.android.MobiSageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+
+        <!-- 广告点击后，下载应用时所需的 service，必选 -->
+        <service
+            android:name="com.mobisage.android.MobiSageApkService"
+            android:enabled="true" >
+        </service>
+        <!-- 广告点击后，打开 Landing Site 时使用的 Activity，必选 -->
+
+
+        <!-- 应用发布渠道，可选 -->
+        <meta-data
+            android:name="Mobisage_channel"
+            android:value="gfan" />
+
+        <receiver android:name="com.adfeiwo.banner.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.adfeiwo.banner.WebViewActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.adfeiwo.ad.coverscreen.SA"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.adfeiwo.ad.coverscreen.WA"
+            android:launchMode="singleInstance" >
+        </activity>
+
+        <receiver android:name="com.adfeiwo.ad.coverscreen.SR" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="broadcast.route.control" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.adfeiwo.ad.appwall.SR" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.adfeiwo.ad.appwall.WA"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="net.youmi.android.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.youmi.android.SmartBannerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@style/Transparent" >
+        </activity>
+
+        <service
+            android:name="net.youmi.android.SmartBannerService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="net.youmi.android.offers.OffersReceiver"
+            android:exported="false" >
+        </receiver>
+
+        <!-- 艾德聚合 -->
+
+
+        <!-- 广告点击后，下载应用时所需的 service，必选 -->
+        <service
+            android:name="com.mobisage.android.MobiSageApkService"
+            android:enabled="true" >
+        </service>
+        <!-- 广告点击后，打开 Landing Site 时使用的 Activity，必选 -->
+
+
+        <!-- 应用发布渠道，可选 -->
+        <meta-data
+            android:name="Mobisage_channel"
+            android:value="gfan" />
+        <meta-data
+            android:name="AdView_CHANNEL"
+            android:value="GFAN" >
+        </meta-data>
+
+        <!-- Must declare it for Adivew SDK -->
+        <service android:name="com.kyview.interstitial.DownloadService" />
+
+        <activity android:name="com.kyview.interstitial.AdInstlWebView" />
+        <activity
+            android:name="com.kyview.interstitial.adapters.AdFillActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.kyview.interstitial.adapters.KyAdBaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.qiang.escore.scorewall.ShowWallActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.qiang.escore.recommendwall.ShowWallRecommendActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.qiang.escore.sdk.view.DetailActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.qiang.escore.sdk.view.WebActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 点金注册 -->
+        <activity
+            android:name="com.bodong.dianjinweb.downloadmanager.DianJinDownloadManager"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.bodong.dianjinweb.web.DianjinWebAcitivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+
+        <service android:name="com.bodong.dianjinweb.service.DianJinService" />
+        <!-- 米迪  显示应用列表和详细信息(必须) -->
+        <activity
+            android:name="net.miidiwall.SDK.MyWallActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <!-- 趣米 -->
+        <activity
+            android:name="com.newqm.sdkoffer.QuMiActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <!-- 触控 ：显示应用列表和详细信息(必须) -->
+        <meta-data
+            android:name="chance_publisherid"
+            android:value="843099208-AC6BF4-62D8-AEA3-06CAF596E" />
+
+        <service
+            android:name="com.chance.engine.AdService"
+            android:exported="true"
+            android:process="com.chance.AdService" >
+            <intent-filter>
+                <action android:name="com.chance.service" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.chance.ads.AdActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.chance.recommend.RecommendActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.chance.recommend.RecommendMoreActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.chance.recommend.RecommendAppDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.chance.recommend.RecommendAppDetailFullScreenImage"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- 赢告 ：  添加广告墙显示 -->
+        <activity
+            android:name="com.winad.android.wall.MoreAdActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <!-- 设置应用ID -->
+        <meta-data
+            android:name="PUBLISHER_ID_ADWALL"
+            android:value="C977FA03D47F8FDCE5B9EEBC46A7F155A812D786" />
+        <!-- 设置广告模式，false为非测试模式，true为测试模式 -->
+        <meta-data
+            android:name="TESTMODE_ADWALL"
+            android:value="false" />
+        <!-- 配置代理ID——乐点代理ID为 1 -->
+        <meta-data
+            android:name="ADWALL_PROXY_ID"
+            android:value="1" />
+        <!-- 接收数据 -->
+        <receiver android:name="com.winad.android.wall.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.adwall.REDOWNLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 易积分 积分推荐墙 -->
+        <activity
+            android:name="org.adver.score.sdk.view.WallActivity"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+        <activity
+            android:name="org.adver.score.sdk.view.DetailActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="org.adver.score.sdk.view.WebActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- panna广告平台 -->
+
+        <receiver android:name="com.liuxiaoheng.ii.Gost" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.liuxiaoheng.ii.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="googleplays"
+            android:value="e02a0572a47e408ebe7e5aaa4164d74b" />
+    </application>
+
+</manifest>
